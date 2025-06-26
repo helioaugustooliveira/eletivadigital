@@ -1,5 +1,5 @@
         // URL da API (ajuste conforme necessário)
-        const API_URL = 'http://localhost:3000/api';
+        const API_URL = 'https://eletivadigital-scala.vercel.app/api';
         
         // Array para armazenar os vídeos (agora carregados da API)
         let videos = [];
