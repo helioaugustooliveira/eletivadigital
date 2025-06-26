@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public')); // Para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.connect('mongodb+srv://gamespagos01:ZTZTMNHELIO%4023a@cluster0.9z1vj6v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('🟢 Conectado ao MongoDB'))
